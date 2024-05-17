@@ -44,6 +44,9 @@ TagManager:
   - name: Bckground
     uniqueID: 1412155405
     locked: 0
+  - name: Barreiras
+    uniqueID: 2353700411
+    locked: 0
   - name: Main
     uniqueID: 1244762259
     locked: 0
