@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,9 @@ public class GameManager : MonoBehaviour
     public SO_GameData gameData;
     public static UIManager ui;
     public GameObject player;
+
+    public string fase2;
+    public string fase3;
 
     public int score;
     public int life;
@@ -41,6 +45,17 @@ public class GameManager : MonoBehaviour
         gameData.score += value;
         score = gameData.score;
         ui.ChangeScore(score);
+        if (score == 2) {
+            LoadScene(fase2);
+        }
+        if (score == 4)
+        {
+            LoadScene(fase3);
+        }
+        if(score == 5)
+        {
+            Victory();
+        }
     }
 
     public void SetLife(int value){
@@ -61,5 +76,6 @@ public class GameManager : MonoBehaviour
     public void Victory(){
         ui.Win();
     }
+    
     
 }

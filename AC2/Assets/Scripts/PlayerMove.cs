@@ -20,11 +20,11 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-        // Input
+        
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        // Movement
+        
         Vector2 moveDir = new Vector2(moveX, moveY).normalized;
         rb.velocity = moveDir * moveSpeed * Time.deltaTime;
 

@@ -46,5 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameData: {fileID: 11400000, guid: e61ec618906aaa940a37c4101bbb56c6, type: 2}
   player: {fileID: 0}
+  fase2: Fase2
+  fase3: Fase3
   score: 0
   life: 0

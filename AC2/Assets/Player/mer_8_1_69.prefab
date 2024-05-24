@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1168296980, guid: 489b74917f4570540badd224bd591c47, type: 3}
   m_Color: {r: 0.5188679, g: 0.2667764, b: 0.2667764, a: 1}
   m_FlipX: 1
@@ -195,8 +195,8 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 5
   mass: 20
-  slowRadius: 3
-  stopRadius: 0.7
+  slowRadius: 2.13
+  stopRadius: 1
 --- !u!114 &7932669585164964111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   distance: 0
-  timetostay: 10
+  timetostay: 5
   seek: {fileID: 3703552979703601641}
   wander: {fileID: 2717429456598731535}
   arrive: {fileID: 454133132051057688}
